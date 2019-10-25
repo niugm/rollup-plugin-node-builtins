@@ -59,7 +59,7 @@ var objectKeys = Object.keys || function (obj) {
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 import {isBuffer} from 'buffer-es6';
 import {isPrimitive, isError, isFunction, isRegExp, isDate, inspect as utilInspect} from './util';
-// import {inherits} from './inherits';
+import {inherits} from './inherits';
 var pSlice = Array.prototype.slice;
 var _functionsHaveNames;
 function functionsHaveNames() {
@@ -159,7 +159,7 @@ export function AssertionError(options) {
 }
 
 // assert.AssertionError instanceof Error
-// inherits(AssertionError, Error);
+inherits(AssertionError, Error);
 
 function truncate(s, n) {
   if (typeof s === 'string') {
