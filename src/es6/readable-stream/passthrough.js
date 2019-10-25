@@ -1,7 +1,7 @@
 
 import {Transform} from './transform';
 
-import {inherits} from 'util';
+import {inherits} from '../inherits';
 inherits(PassThrough, Transform);
 export default PassThrough;
 export function PassThrough(options) {

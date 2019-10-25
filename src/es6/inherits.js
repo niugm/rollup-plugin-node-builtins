@@ -1,7 +1,7 @@
 
-var inherits;
+var inheritsService;
 if (typeof Object.create === 'function'){
-  inherits = function inherits(ctor, superCtor) {
+  inheritsService = function inheritsService(ctor, superCtor) {
     // implementation from standard node.js 'util' module
     ctor.super_ = superCtor
     ctor.prototype = Object.create(superCtor.prototype, {
@@ -14,7 +14,7 @@ if (typeof Object.create === 'function'){
     });
   };
 } else {
-  inherits = function inherits(ctor, superCtor) {
+  inheritsService = function inheritsService(ctor, superCtor) {
     ctor.super_ = superCtor
     var TempCtor = function () {}
     TempCtor.prototype = superCtor.prototype
@@ -22,4 +22,6 @@ if (typeof Object.create === 'function'){
     ctor.prototype.constructor = ctor
   }
 }
-export default inherits;
+export default inheritsService;
+export const inherits = inheritsService;
+

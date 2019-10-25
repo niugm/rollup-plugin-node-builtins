@@ -44,7 +44,7 @@
 import {Duplex} from './duplex';
 
 
-import {inherits} from '../util';
+import {inherits} from '../inherits';
 inherits(Transform, Duplex);
 
 function TransformState(stream) {

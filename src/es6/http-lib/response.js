@@ -1,6 +1,6 @@
 import {overrideMimeType} from './capability';
-import {inherits} from 'util';
-import {Readable} from 'stream';
+import {inherits} from '../inherits';
+import {Readable} from '../stream';
 
 var rStates = {
   UNSENT: 0,

@@ -1,5 +1,5 @@
 import EE from 'events';
-import {inherits} from 'util';
+import {inherits} from './inherits';
 
 import {Duplex} from './readable-stream/duplex.js';
 import {Readable} from './readable-stream/readable.js';

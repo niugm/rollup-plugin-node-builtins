@@ -3,7 +3,8 @@
 
 Readable.ReadableState = ReadableState;
 import EventEmitter from 'events';
-import {inherits, debuglog} from '../util';
+import {debuglog} from '../util';
+import {inherits} from '../inherits';
 import BufferList from './buffer-list';
 import {StringDecoder} from 'string_decoder';
 import {Duplex} from './duplex';

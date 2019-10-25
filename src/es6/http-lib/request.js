@@ -1,7 +1,7 @@
 import * as capability from './capability';
-import {inherits} from 'util';
+import {inherits} from '../inherits';
 import {IncomingMessage, readyStates as rStates} from './response';
-import {Writable} from 'stream';
+import {Writable} from '../stream';
 import toArrayBuffer from './to-arraybuffer';
 
 function decideMode(preferBinary, useFetch) {
