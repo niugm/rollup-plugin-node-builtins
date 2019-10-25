@@ -1,7 +1,7 @@
 import {join} from 'path';
 const libs = new Map();
 
-console.log('Using torch2424 rollup-plugin-node-builtins');
+console.log('Using torch2424 rollup-plugin-node-builtins2');
 
 // our es6 versions
 libs.set('process', require.resolve('process-es6'));
