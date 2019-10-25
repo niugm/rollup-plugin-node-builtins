@@ -4,7 +4,7 @@ var path = require('path');
 
 var libs = new Map();
 
-console.log('Using torch2424 rollup-plugin-node-builtins');
+console.log('Using torch2424 rollup-plugin-node-builtins2 from git');
 
 // our es6 versions
 libs.set('process', require.resolve('process-es6'));
