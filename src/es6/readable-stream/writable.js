@@ -5,9 +5,9 @@
 
 import {deprecate} from '../util';
 import {inherits} from '../inherits';
-import {Buffer} from 'buffer';
+import {Buffer} from 'buffer-es6';
 Writable.WritableState = WritableState;
-import {EventEmitter} from 'events';
+import {EventEmitter} from '../events';
 // import {Duplex} from './duplex';
 import {nextTick} from 'process-es6';
 inherits(Writable, EventEmitter);

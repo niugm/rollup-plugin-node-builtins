@@ -2,7 +2,7 @@
 
 // MIT License
 // Copyright (c) 2016 John Hiesey
-import {isBuffer} from 'buffer';
+import {isBuffer} from 'buffer-es6';
 export default function (buf) {
   // If the buffer is backed by a Uint8Array, a faster version will work
   if (buf instanceof Uint8Array) {

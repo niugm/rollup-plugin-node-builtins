@@ -553,8 +553,8 @@ export function log() {
  *     prototype.
  * @param {function} superCtor Constructor function to inherit prototype from.
  */
-// import inherits from './inherits';
-// export {inherits}
+import inherits from './inherits';
+export {inherits}
 
 export function _extend(origin, add) {
   // Don't do anything if add isn't an object
@@ -573,7 +573,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 export default {
-  inherits: () => {throw new Error('Inherits not on util')},
+  inherits: inherits,
   _extend: _extend,
   log: log,
   isBuffer: isBuffer,

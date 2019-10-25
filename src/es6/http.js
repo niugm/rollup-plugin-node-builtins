@@ -28,7 +28,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 */
 import ClientRequest from './http-lib/request';
-import {parse} from 'url';
+import {parse} from './url';
 
 export function request(opts, cb) {
   if (typeof opts === 'string')

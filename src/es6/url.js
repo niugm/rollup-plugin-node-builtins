@@ -20,8 +20,8 @@
 // USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-import {toASCII} from 'punycode';
-import {isObject,isString,isNullOrUndefined,isNull} from 'util';
+import {toASCII} from './punycode';
+import {isObject,isString,isNullOrUndefined,isNull} from './util';
 import {parse as qsParse,stringify as qsStringify} from 'querystring';
 export {
   urlParse as parse,
