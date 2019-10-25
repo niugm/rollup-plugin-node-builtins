@@ -1,5 +1,5 @@
 
-import {inherits} from 'util';
+import {inherits} from '../util';
 import {nextTick} from 'process-es6';
 import {Readable} from './readable';
 import {Writable} from './writable';

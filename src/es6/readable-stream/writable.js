@@ -3,7 +3,7 @@
 // the drain event emission and buffering.
 
 
-import {inherits, deprecate} from 'util';
+import {inherits, deprecate} from '../util';
 import {Buffer} from 'buffer';
 Writable.WritableState = WritableState;
 import {EventEmitter} from 'events';
