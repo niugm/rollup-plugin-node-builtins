@@ -58,7 +58,8 @@ var objectKeys = Object.keys || function (obj) {
 // ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 import {isBuffer} from 'buffer';
-import {isPrimitive, inherits, isError, isFunction, isRegExp, isDate, inspect as utilInspect} from 'util';
+import {isPrimitive, isError, isFunction, isRegExp, isDate, inspect as utilInspect} from './util';
+import {inherits} from './inherits';
 var pSlice = Array.prototype.slice;
 var _functionsHaveNames;
 function functionsHaveNames() {
