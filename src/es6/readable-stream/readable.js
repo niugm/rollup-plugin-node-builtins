@@ -7,7 +7,7 @@ import {debuglog} from '../util';
 import {inherits} from '../inherits';
 import BufferList from './buffer-list';
 import {StringDecoder} from 'string_decoder';
-import {Duplex} from './duplex';
+// import {Duplex} from './duplex';
 import {nextTick} from 'process-es6';
 
 var debug = debuglog('stream');
@@ -42,7 +42,8 @@ function ReadableState(options, stream) {
   // make all the buffer merging and length checks go away
   this.objectMode = !!options.objectMode;
 
-  if (stream instanceof Duplex) this.objectMode = this.objectMode || !!options.readableObjectMode;
+  // if (stream instanceof Duplex) this.objectMode = this.objectMode || !!options.readableObjectMode;
+  if (stream && stream.isDuplex) this.objectMode = this.objectMode || !!options.readableObjectMode;
 
   // the point at which it stops calling _read() to fill the buffer
   // Note: 0 is a valid value, means "don't call _read preemptively ever"

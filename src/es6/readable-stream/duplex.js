@@ -4,7 +4,6 @@ import {nextTick} from 'process-es6';
 import {Readable} from './readable';
 import {Writable} from './writable';
 
-
 inherits(Duplex, Readable);
 
 var keys = Object.keys(Writable.prototype);
@@ -12,6 +11,7 @@ for (var v = 0; v < keys.length; v++) {
   var method = keys[v];
   if (!Duplex.prototype[method]) Duplex.prototype[method] = Writable.prototype[method];
 }
+Duplex.prototype.isDuplex = true;
 export default Duplex;
 export function Duplex(options) {
   if (!(this instanceof Duplex)) return new Duplex(options);
