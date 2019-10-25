@@ -1,5 +1,5 @@
 
-var inheritsService;
+let inheritsService;
 if (typeof Object.create === 'function'){
   inheritsService = function inheritsService(ctor, superCtor) {
     // implementation from standard node.js 'util' module
