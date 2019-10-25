@@ -21,7 +21,7 @@ libs.set('string_decoder', require.resolve(path.join('..', 'src', 'es6', 'string
 libs.set('http', require.resolve(path.join('..', 'src', 'es6', 'http')));
 libs.set('https', require.resolve(path.join('..', 'src', 'es6', 'http')));
 libs.set('os', require.resolve(path.join('..', 'src', 'es6', 'os')));
-libs.set('assert', require.resolve(path.join('..', 'src', 'es6', 'assert')));
+// libs.set('assert', require.resolve(join('..', 'src', 'es6', 'assert')));
 libs.set('constants', require.resolve('./constants'));
 libs.set('_stream_duplex', require.resolve(path.join('..', 'src', 'es6', 'readable-stream', 'duplex')));
 libs.set('_stream_passthrough', require.resolve(path.join('..', 'src', 'es6', 'readable-stream', 'passthrough')));
